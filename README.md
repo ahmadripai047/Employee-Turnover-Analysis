@@ -141,7 +141,7 @@ python analysis.py
 
 ## 🎓 Konteks Akademik
 
-Proyek ini merupakan bagian dari tugas ujian mata kuliah **Predictive Data Mining** pada jenjang perguruan tinggi. Analisis berfokus pada penerapan teknik regresi logistik untuk klasifikasi biner dalam konteks manajemen sumber daya manusia.
+Proyek ini merupakan bagian dari tugas ujian mata kuliah **Pengantar Data Mining** pada jenjang perguruan tinggi. Analisis berfokus pada penerapan teknik regresi logistik untuk klasifikasi biner dalam konteks manajemen sumber daya manusia.
 
 ---
 
