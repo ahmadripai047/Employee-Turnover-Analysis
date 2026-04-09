@@ -103,11 +103,11 @@ with st.sidebar:
     st.divider()
     st.subheader("📑 Navigasi")
     page = st.radio("Halaman", [
-        "🏠 Overview",
-        "🧠 Variabel Psikologis",
-        "📉 Korelasi & Regresi",
-        "🤖 Evaluasi Model",
-        "🔮 Prediksi Individu"
+        "Overview",
+        "Variabel Psikologis",
+        "Korelasi & Regresi",
+        "Evaluasi Model",
+        "Prediksi Individu"
     ])
     st.divider()
     st.caption("Dataset: 1.129 observasi karyawan\nMata kuliah: Pengantar Data Mining")
@@ -122,18 +122,18 @@ dff = df[
 # ═══════════════════════════════════════════════════════════
 # PAGE: OVERVIEW
 # ═══════════════════════════════════════════════════════════
-if page == "🏠 Overview":
-    st.title("🏠 Employee Turnover — Overview Dashboard")
+if page == "Overview":
+    st.title("Employee Turnover — Overview Dashboard")
     st.caption(f"Data setelah filter: **{len(dff):,}** dari {len(df):,} karyawan")
     st.divider()
 
     # KPI Cards
     col1, col2, col3, col4, col5 = st.columns(5)
     kpis = [
-        ("👥 Total Karyawan", f"{len(dff):,}", "#2C3E50"),
-        ("🚪 Turnover", f"{dff['turnover'].mean()*100:.1f}%", "#E74C3C"),
-        ("📅 Rata-rata Usia", f"{dff['age'].mean():.1f} thn", "#2980B9"),
-        ("💼 Rata-rata Pengalaman", f"{dff['experience'].mean():.1f} thn", "#27AE60"),
+        ("Total Karyawan", f"{len(dff):,}", "#2C3E50"),
+        ("Turnover", f"{dff['turnover'].mean()*100:.1f}%", "#E74C3C"),
+        ("Rata-rata Usia", f"{dff['age'].mean():.1f} thn", "#2980B9"),
+        ("Rata-rata Pengalaman", f"{dff['experience'].mean():.1f} thn", "#27AE60"),
         ("♀ Proporsi Perempuan", f"{dff['gender'].mean()*100:.1f}%", "#E67E22"),
     ]
     for col, (label, val, color) in zip([col1,col2,col3,col4,col5], kpis):
@@ -210,8 +210,8 @@ if page == "🏠 Overview":
 # ═══════════════════════════════════════════════════════════
 # PAGE: PSYCHOLOGICAL VARIABLES
 # ═══════════════════════════════════════════════════════════
-elif page == "🧠 Variabel Psikologis":
-    st.title("🧠 Analisis Variabel Psikologis")
+elif page == "Variabel Psikologis":
+    st.title("Analisis Variabel Psikologis")
     st.caption("Self-Control & Anxiety sebagai prediktor turnover")
     st.divider()
 
@@ -280,8 +280,8 @@ elif page == "🧠 Variabel Psikologis":
 # ═══════════════════════════════════════════════════════════
 # PAGE: CORRELATION & REGRESSION
 # ═══════════════════════════════════════════════════════════
-elif page == "📉 Korelasi & Regresi":
-    st.title("📉 Korelasi & Logistic Regression")
+elif page == "Korelasi & Regresi":
+    st.title("Korelasi & Logistic Regression")
     st.divider()
 
     col1, col2 = st.columns([1.1, 0.9])
@@ -336,8 +336,8 @@ elif page == "📉 Korelasi & Regresi":
 # ═══════════════════════════════════════════════════════════
 # PAGE: MODEL EVALUATION
 # ═══════════════════════════════════════════════════════════
-elif page == "🤖 Evaluasi Model":
-    st.title("🤖 Evaluasi Model — Logistic Regression")
+elif page == "Evaluasi Model":
+    st.title("Evaluasi Model — Logistic Regression")
     st.divider()
 
     # Metrics
@@ -404,8 +404,8 @@ elif page == "🤖 Evaluasi Model":
 # ═══════════════════════════════════════════════════════════
 # PAGE: PREDICTION
 # ═══════════════════════════════════════════════════════════
-elif page == "🔮 Prediksi Individu":
-    st.title("🔮 Prediksi Risiko Turnover Individu")
+elif page == "Prediksi Individu":
+    st.title("Prediksi Risiko Turnover Individu")
     st.caption("Masukkan data karyawan untuk memprediksi kemungkinan turnover")
     st.divider()
 
@@ -419,7 +419,7 @@ elif page == "🔮 Prediksi Individu":
         anx_in     = st.slider("Skor Anxiety (0–10)", 0.0, 10.0, 5.0, step=0.1)
         exp_in     = st.slider("Pengalaman Kerja (tahun)", 0.0, 50.0, 10.0, step=0.5)
 
-        predict_btn = st.button("🔮 Prediksi Sekarang", type="primary", use_container_width=True)
+        predict_btn = st.button("Prediksi Sekarang", type="primary", use_container_width=True)
 
     with col2:
         st.subheader("📊 Hasil Prediksi")
