@@ -396,8 +396,8 @@ elif page == "Evaluasi Model":
     <div class="insight-box">
     💡 <b>Interpretasi:</b> AUC = 0.528 mendekati 0.5 (random classifier), mengindikasikan model
     dengan variabel yang tersedia memiliki kemampuan diskriminasi yang terbatas. Ini adalah temuan
-    yang valid secara akademis — menunjukkan bahwa turnover tidak bisa diprediksi hanya dari
-    faktor psikologis & demografis dasar ini. Diperlukan variabel tambahan seperti kepuasan kerja,
+    yang valid secara akademis yang menunjukkan bahwa turnover tidak bisa diprediksi hanya dari
+    faktor psikologis & demografis. Diperlukan variabel tambahan seperti kepuasan kerja,
     gaji, atau budaya organisasi.
     </div>""", unsafe_allow_html=True)
 
