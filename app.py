@@ -474,4 +474,4 @@ elif page == "Prediksi Individu":
 
 # ─── Footer ───────────────────────────────────────────────
 st.divider()
-st.caption("📚 Portofolio Akademik | Pengantar Data Mining | Dataset UAS")
+st.caption(" Muhammad Rifai (M0721047) | UAS Pengantar Data Mining ")
