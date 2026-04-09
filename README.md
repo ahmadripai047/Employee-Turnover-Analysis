@@ -23,8 +23,8 @@ Dataset terdiri dari **1.129 observasi karyawan** dengan 6 variabel utama:
 
 ```
 ├── pdm_dataset.xlsx          # Dataset original
-├── analysis.py               # Script analisis lengkap (Python)
-├── README.md                 # Dokumentasi ini
+├── analysis.py               # Script analisis (Python)
+├── README.md                 
 ├── figures/
 │   ├── fig1_overview.png         # Overview & distribusi data
 │   ├── fig2_psychology.png       # Analisis variabel psikologis
