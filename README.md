@@ -1,5 +1,5 @@
 # 📊 Employee Turnover Analysis — Pengantar Data Mining (PDM)
-
+👉 [Klik di sini untuk melihat Dashboard](https://employee-turnover-analysis.streamlit.app/)
 ## 📋 Deskripsi Dataset
 
 Dataset ini merupakan data ujian akhir semester (UAS) mata kuliah **Pengatar Data Mining (PDM)** yang menganalisis faktor-faktor psikologis dan demografis yang mempengaruhi **keputusan karyawan untuk keluar (turnover)** dari perusahaan.
