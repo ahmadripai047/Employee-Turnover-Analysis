@@ -87,7 +87,7 @@ PALETTE = {"red": "#E74C3C", "green": "#27AE60", "blue": "#2980B9",
 with st.sidebar:
     st.image("https://img.icons8.com/fluency/96/analytics.png", width=70)
     st.title("📊 Employee Turnover")
-    st.caption("Predictive Data Mining — Analisis Ujian Kuliah")
+    st.caption("Pengantar Data Mining - Analisis faktor-faktor psikologis dan demografis yang mempengaruhi keputusan karyawan untuk keluar (turnover) dari perusahaan")
     st.divider()
 
     st.subheader("🔎 Filter Data")
