@@ -50,7 +50,7 @@ st.markdown("""
 # ─── Load Data ───────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_excel("pdm_dataset.xlsx", sheet_name="turnover")
+    df = pd.read_excel("employee-turnover-dataset.xlsx", sheet_name="turnover")
     df.columns = ['turnover', 'gender', 'age', 'self_control', 'anxiety', 'experience']
     df['turnover_label'] = df['turnover'].map({1: 'Turnover', 0: 'Bertahan'})
     df['gender_label']   = df['gender'].map({1: 'Perempuan', 0: 'Laki-laki'})
@@ -110,7 +110,7 @@ with st.sidebar:
         "🔮 Prediksi Individu"
     ])
     st.divider()
-    st.caption("Dataset: 1.129 observasi karyawan\nMata kuliah: Predictive Data Mining")
+    st.caption("Dataset: 1.129 observasi karyawan\nMata kuliah: Pengantar Data Mining")
 
 # ─── Apply filter ─────────────────────────────────────────
 dff = df[
@@ -474,4 +474,4 @@ elif page == "🔮 Prediksi Individu":
 
 # ─── Footer ───────────────────────────────────────────────
 st.divider()
-st.caption("📚 Portofolio Akademik | Predictive Data Mining | Dataset Ujian Kuliah")
+st.caption("📚 Portofolio Akademik | Pengantar Data Mining | Dataset UAS")
